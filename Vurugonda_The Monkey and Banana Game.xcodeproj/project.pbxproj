@@ -12,6 +12,9 @@
 		3F82F1D91DDBCBCA00A4BD1F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F82F1D71DDBCBCA00A4BD1F /* Main.storyboard */; };
 		3F82F1DB1DDBCBCA00A4BD1F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F82F1DA1DDBCBCA00A4BD1F /* Assets.xcassets */; };
 		3F82F1DE1DDBCBCA00A4BD1F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F82F1DC1DDBCBCA00A4BD1F /* LaunchScreen.storyboard */; };
+		3F82F1E61DDBCCC600A4BD1F /* monkey.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F82F1E51DDBCCC600A4BD1F /* monkey.jpg */; };
+		3F82F1E81DDBCCCB00A4BD1F /* banana.png in Resources */ = {isa = PBXBuildFile; fileRef = 3F82F1E71DDBCCCB00A4BD1F /* banana.png */; };
+		3F82F1EA1DDBDEE100A4BD1F /* stock-illustration-7118828-monkey-sitting-on-banana.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3F82F1E91DDBDEE100A4BD1F /* stock-illustration-7118828-monkey-sitting-on-banana.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,9 @@
 		3F82F1DA1DDBCBCA00A4BD1F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F82F1DD1DDBCBCA00A4BD1F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F82F1DF1DDBCBCA00A4BD1F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F82F1E51DDBCCC600A4BD1F /* monkey.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = monkey.jpg; sourceTree = "<group>"; };
+		3F82F1E71DDBCCCB00A4BD1F /* banana.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = banana.png; sourceTree = "<group>"; };
+		3F82F1E91DDBDEE100A4BD1F /* stock-illustration-7118828-monkey-sitting-on-banana.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "stock-illustration-7118828-monkey-sitting-on-banana.jpg"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,7 +62,10 @@
 			children = (
 				3F82F1D31DDBCBCA00A4BD1F /* AppDelegate.swift */,
 				3F82F1D51DDBCBCA00A4BD1F /* ViewController.swift */,
+				3F82F1E71DDBCCCB00A4BD1F /* banana.png */,
+				3F82F1E91DDBDEE100A4BD1F /* stock-illustration-7118828-monkey-sitting-on-banana.jpg */,
 				3F82F1D71DDBCBCA00A4BD1F /* Main.storyboard */,
+				3F82F1E51DDBCCC600A4BD1F /* monkey.jpg */,
 				3F82F1DA1DDBCBCA00A4BD1F /* Assets.xcassets */,
 				3F82F1DC1DDBCBCA00A4BD1F /* LaunchScreen.storyboard */,
 				3F82F1DF1DDBCBCA00A4BD1F /* Info.plist */,
@@ -122,9 +131,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F82F1E61DDBCCC600A4BD1F /* monkey.jpg in Resources */,
 				3F82F1DE1DDBCBCA00A4BD1F /* LaunchScreen.storyboard in Resources */,
 				3F82F1DB1DDBCBCA00A4BD1F /* Assets.xcassets in Resources */,
 				3F82F1D91DDBCBCA00A4BD1F /* Main.storyboard in Resources */,
+				3F82F1EA1DDBDEE100A4BD1F /* stock-illustration-7118828-monkey-sitting-on-banana.jpg in Resources */,
+				3F82F1E81DDBCCCB00A4BD1F /* banana.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

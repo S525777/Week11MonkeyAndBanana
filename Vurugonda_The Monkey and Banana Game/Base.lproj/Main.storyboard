@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6211" systemVersion="14A298i" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6204"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Vurugonda_The_Monkey_and_Banana_Game" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -15,11 +18,330 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="monkey.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="88n-AE-3Ea">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="163" id="0oR-bK-NXQ"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="0oR-bK-NXQ"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="108" y="230" width="163" height="164"/>
+                                    <mask key="constraints">
+                                        <include reference="0oR-bK-NXQ"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="hNU-Dh-Hdu">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="62" id="cX4-Qy-L4a"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="cX4-Qy-L4a"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="268" y="96" width="62" height="72"/>
+                                    <mask key="constraints">
+                                        <include reference="cX4-Qy-L4a"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="rbg-sd-AB1" appends="YES" id="8kc-tz-8eN"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="rQs-W2-BRB">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="63" id="3tS-Xq-too"/>
+                                    <constraint firstAttribute="height" constant="65" id="fcR-jU-hI3"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="3tS-Xq-too"/>
+                                        <exclude reference="fcR-jU-hI3"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="53" y="103" width="63" height="65"/>
+                                    <mask key="constraints">
+                                        <include reference="3tS-Xq-too"/>
+                                        <include reference="fcR-jU-hI3"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="XB0-sM-AL9" appends="YES" id="UJb-ZQ-dC4"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="wd8-tu-XNr">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="Ui0-lE-yqY"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ui0-lE-yqY"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="256" y="470" width="65" height="71"/>
+                                    <mask key="constraints">
+                                        <include reference="Ui0-lE-yqY"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="6BJ-vY-O7U" appends="YES" id="qNk-ij-BLg"/>
+                                </connections>
+                            </imageView>
+                            <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="banana.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kuw-Ly-TAH">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="71" id="Ujg-Ns-1Rs"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="Ujg-Ns-1Rs"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="53" y="470" width="63" height="71"/>
+                                    <mask key="constraints">
+                                        <include reference="Ujg-Ns-1Rs"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="wSk-gj-6UR" appends="YES" id="fef-Gl-CGR"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="I want 1 banana" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ahq-K4-x3x">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="l5n-dA-h2Q"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="l5n-dA-h2Q"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="105" y="201" width="273" height="21"/>
+                                    <mask key="constraints">
+                                        <include reference="l5n-dA-h2Q"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="v0h-4s-Gvv">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <state key="normal" title="Check Result "/>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="53" y="414" width="120" height="30"/>
+                                </variation>
+                                <connections>
+                                    <action selector="CheckResultActionBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0j2-Fw-MZw"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Monkey and Banana Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SzD-bO-YZc">
+                                <rect key="frame" x="-42" y="-21" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="29" id="npg-4A-E0P"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="npg-4A-E0P"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="58" y="33" width="327" height="29"/>
+                                    <mask key="constraints">
+                                        <include reference="npg-4A-E0P"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WMM-ZB-hrn">
+                                <rect key="frame" x="-23" y="-15" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="92" id="ZML-t3-g0E"/>
+                                </constraints>
+                                <state key="normal" title="New Problem"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="ZML-t3-g0E"/>
+                                    </mask>
+                                </variation>
+                                <variation key="widthClass=compact" misplaced="YES">
+                                    <rect key="frame" x="214" y="414" width="92" height="30"/>
+                                    <mask key="constraints">
+                                        <include reference="ZML-t3-g0E"/>
+                                    </mask>
+                                </variation>
+                                <connections>
+                                    <action selector="NewProblemBTN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="8tf-0i-hqL"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="88n-AE-3Ea" firstAttribute="top" secondItem="Ahq-K4-x3x" secondAttribute="bottom" constant="8" symbolic="YES" id="2xV-ro-pFf"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Ahq-K4-x3x" secondAttribute="trailing" constant="7" id="354-fn-mYy"/>
+                            <constraint firstItem="rQs-W2-BRB" firstAttribute="leading" secondItem="v0h-4s-Gvv" secondAttribute="leading" id="4Km-I8-ay7"/>
+                            <constraint firstItem="SzD-bO-YZc" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="4hA-Lh-0hd"/>
+                            <constraint firstItem="Ahq-K4-x3x" firstAttribute="top" secondItem="rQs-W2-BRB" secondAttribute="bottom" constant="33" id="4nc-hR-5Yi"/>
+                            <constraint firstItem="v0h-4s-Gvv" firstAttribute="top" secondItem="88n-AE-3Ea" secondAttribute="bottom" constant="8" symbolic="YES" id="BZz-Qw-KVB"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="wd8-tu-XNr" secondAttribute="trailing" constant="64" id="Buw-wO-S7z"/>
+                            <constraint firstItem="Kuw-Ly-TAH" firstAttribute="top" secondItem="v0h-4s-Gvv" secondAttribute="bottom" constant="26" id="EtZ-Qh-SJk"/>
+                            <constraint firstItem="SzD-bO-YZc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="33" id="Ltt-Ev-VpL"/>
+                            <constraint firstItem="88n-AE-3Ea" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="83" id="OK2-4Q-g3Y"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="WMM-ZB-hrn" secondAttribute="trailing" constant="77" id="OUA-w5-3eV"/>
+                            <constraint firstItem="SzD-bO-YZc" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="R9Y-M2-4zF"/>
+                            <constraint firstItem="WMM-ZB-hrn" firstAttribute="top" secondItem="88n-AE-3Ea" secondAttribute="bottom" constant="2" id="Rol-Ro-NJj"/>
+                            <constraint firstItem="v0h-4s-Gvv" firstAttribute="leading" secondItem="Kuw-Ly-TAH" secondAttribute="leading" id="WuA-9U-O8g"/>
+                            <constraint firstItem="rQs-W2-BRB" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="28" id="bTD-wy-rH0"/>
+                            <constraint firstItem="hNU-Dh-Hdu" firstAttribute="top" secondItem="SzD-bO-YZc" secondAttribute="bottom" constant="34" id="dZu-1H-qf7"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hNU-Dh-Hdu" secondAttribute="trailing" constant="55" id="eK2-Sv-8Lf"/>
+                            <constraint firstItem="Kuw-Ly-TAH" firstAttribute="top" secondItem="wd8-tu-XNr" secondAttribute="top" id="iZr-xb-91a"/>
+                            <constraint firstItem="WMM-ZB-hrn" firstAttribute="leading" secondItem="v0h-4s-Gvv" secondAttribute="trailing" constant="43" id="jCH-sl-nPe"/>
+                            <constraint firstItem="rQs-W2-BRB" firstAttribute="bottom" secondItem="hNU-Dh-Hdu" secondAttribute="bottom" id="nyI-xs-qe8"/>
+                            <constraint firstItem="rQs-W2-BRB" firstAttribute="top" secondItem="SzD-bO-YZc" secondAttribute="bottom" constant="41" id="oTa-Wb-Cds"/>
+                            <constraint firstItem="rQs-W2-BRB" firstAttribute="trailing" secondItem="Kuw-Ly-TAH" secondAttribute="trailing" id="pYx-M7-U3r"/>
+                            <constraint firstItem="Kuw-Ly-TAH" firstAttribute="bottom" secondItem="wd8-tu-XNr" secondAttribute="bottom" id="rhH-Kk-FF0"/>
+                            <constraint firstItem="wd8-tu-XNr" firstAttribute="top" secondItem="WMM-ZB-hrn" secondAttribute="bottom" constant="32" id="tEE-rr-RR0"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Kuw-Ly-TAH" secondAttribute="bottom" constant="72" id="uJb-PG-5M8"/>
+                            <constraint firstItem="Ahq-K4-x3x" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="80" id="zsn-iY-I4c"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="88n-AE-3Ea"/>
+                                <exclude reference="hNU-Dh-Hdu"/>
+                                <exclude reference="rQs-W2-BRB"/>
+                                <exclude reference="wd8-tu-XNr"/>
+                                <exclude reference="Kuw-Ly-TAH"/>
+                                <exclude reference="Ahq-K4-x3x"/>
+                                <exclude reference="v0h-4s-Gvv"/>
+                                <exclude reference="SzD-bO-YZc"/>
+                                <exclude reference="WMM-ZB-hrn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="4hA-Lh-0hd"/>
+                                <exclude reference="Ltt-Ev-VpL"/>
+                                <exclude reference="R9Y-M2-4zF"/>
+                                <exclude reference="4Km-I8-ay7"/>
+                                <exclude reference="bTD-wy-rH0"/>
+                                <exclude reference="nyI-xs-qe8"/>
+                                <exclude reference="oTa-Wb-Cds"/>
+                                <exclude reference="pYx-M7-U3r"/>
+                                <exclude reference="354-fn-mYy"/>
+                                <exclude reference="4nc-hR-5Yi"/>
+                                <exclude reference="zsn-iY-I4c"/>
+                                <exclude reference="2xV-ro-pFf"/>
+                                <exclude reference="OK2-4Q-g3Y"/>
+                                <exclude reference="dZu-1H-qf7"/>
+                                <exclude reference="eK2-Sv-8Lf"/>
+                                <exclude reference="BZz-Qw-KVB"/>
+                                <exclude reference="WuA-9U-O8g"/>
+                                <exclude reference="OUA-w5-3eV"/>
+                                <exclude reference="Rol-Ro-NJj"/>
+                                <exclude reference="jCH-sl-nPe"/>
+                                <exclude reference="EtZ-Qh-SJk"/>
+                                <exclude reference="iZr-xb-91a"/>
+                                <exclude reference="rhH-Kk-FF0"/>
+                                <exclude reference="Buw-wO-S7z"/>
+                                <exclude reference="tEE-rr-RR0"/>
+                                <exclude reference="uJb-PG-5M8"/>
+                            </mask>
+                        </variation>
+                        <variation key="widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="88n-AE-3Ea"/>
+                                <include reference="hNU-Dh-Hdu"/>
+                                <include reference="rQs-W2-BRB"/>
+                                <include reference="wd8-tu-XNr"/>
+                                <include reference="Kuw-Ly-TAH"/>
+                                <include reference="Ahq-K4-x3x"/>
+                                <include reference="v0h-4s-Gvv"/>
+                                <include reference="SzD-bO-YZc"/>
+                                <include reference="WMM-ZB-hrn"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="4hA-Lh-0hd"/>
+                                <include reference="Ltt-Ev-VpL"/>
+                                <include reference="R9Y-M2-4zF"/>
+                                <include reference="4Km-I8-ay7"/>
+                                <include reference="bTD-wy-rH0"/>
+                                <include reference="nyI-xs-qe8"/>
+                                <include reference="oTa-Wb-Cds"/>
+                                <include reference="pYx-M7-U3r"/>
+                                <include reference="354-fn-mYy"/>
+                                <include reference="4nc-hR-5Yi"/>
+                                <include reference="zsn-iY-I4c"/>
+                                <include reference="2xV-ro-pFf"/>
+                                <include reference="OK2-4Q-g3Y"/>
+                                <include reference="dZu-1H-qf7"/>
+                                <include reference="eK2-Sv-8Lf"/>
+                                <include reference="BZz-Qw-KVB"/>
+                                <include reference="WuA-9U-O8g"/>
+                                <include reference="OUA-w5-3eV"/>
+                                <include reference="Rol-Ro-NJj"/>
+                                <include reference="jCH-sl-nPe"/>
+                                <include reference="EtZ-Qh-SJk"/>
+                                <include reference="iZr-xb-91a"/>
+                                <include reference="rhH-Kk-FF0"/>
+                                <include reference="Buw-wO-S7z"/>
+                                <include reference="tEE-rr-RR0"/>
+                                <include reference="uJb-PG-5M8"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="bananaIV1" destination="rQs-W2-BRB" id="kO2-1n-RHJ"/>
+                        <outlet property="bananaIV2" destination="hNU-Dh-Hdu" id="amt-FG-OPE"/>
+                        <outlet property="bananaIV3" destination="Kuw-Ly-TAH" id="yVQ-tC-edT"/>
+                        <outlet property="bananaIV4" destination="wd8-tu-XNr" id="8qi-xw-ILl"/>
+                        <outlet property="monkeyIV" destination="88n-AE-3Ea" id="Wd6-7O-h2K"/>
+                        <outlet property="questionLBL" destination="Ahq-K4-x3x" id="ZbV-Dj-0rX"/>
+                    </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="XB0-sM-AL9">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="aoh-r2-NNN"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="rbg-sd-AB1">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="pMU-Qe-hT1"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="wSk-gj-6UR">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="q8h-gl-CYu"/>
+                    </connections>
+                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="6BJ-vY-O7U">
+                    <connections>
+                        <action selector="handlePan:" destination="BYZ-38-t0r" id="8N7-NM-3Fc"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
+            <point key="canvasLocation" x="672" y="427"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="banana.png" width="552" height="597"/>
+        <image name="monkey.jpg" width="320" height="320"/>
+    </resources>
 </document>
