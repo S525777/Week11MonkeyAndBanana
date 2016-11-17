@@ -47,6 +47,7 @@ class ViewController: UIViewController {
         }
         else{
             questionLBL.text = "I want  \(randomNo) bananas"
+            print("bubble")
         }
     }
 
