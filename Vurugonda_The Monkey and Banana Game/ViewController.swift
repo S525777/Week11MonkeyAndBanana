@@ -50,7 +50,7 @@ class ViewController: UIViewController {
            
         }
     }
-
+// hoaergjkfx
     @IBAction func CheckResultActionBTN(sender: AnyObject) {
         let monkeyPosX = monkeyIV.center.x
         let monkeyposY = monkeyIV.center.y
